@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-</head>
-
-<body>
-<!--Desenvolver o código Javascript para os seguintes enunciados: 
-
-5-)  Peça ao usuário para digitar várias idades, alturas e sexos.  Imprima na tela quantas pessoas são do sexo masculino e quantas pessoas são do sexo feminino. Mostre também qual é a maior altura e se essa altura é de um homem ou uma mulher. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.-->
-</body>
-<script>
-    parar = 0
+parar = 0
     var idade = new Array()
     var altura = new Array()
     var sexo = new Array()
@@ -62,13 +47,11 @@
     document.write(`Possui ${maiorIdade} pessoas maiores de 18 anos <br>`)
     document.write(`Possui ${menorIdade} pessoas menores de 18 anos <br>`)
 
-    // console.log apenas para consulta de dados digitados pelo usuário
-    console.log(idade)
-    console.log(altura)
-    console.log(sexo)
-    console.log(masc)
-    console.log(fem)
-    console.log(amaior,sexo[msexo])
+// console.log apenas para consulta de dados digitados pelo usuário
+console.log(idade)
+console.log(altura)
+console.log(sexo)
+console.log(masc)
+console.log(fem)
+console.log(amaior,sexo[msexo])
     
-</script>
-</html>

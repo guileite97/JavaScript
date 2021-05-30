@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Exercicio 2</title>
-    <meta charset="UTF-8">
-  
-    <script>
-        var n1 = parseInt(prompt("Digite o 1º Número"));
+var n1 = parseInt(prompt("Digite o 1º Número"));
         var n2 = parseInt(prompt("Digite o 2º Número"));
 
         
@@ -17,13 +9,3 @@
             <tr><td>${n1} x ${n2}</td> <td> ${n1*n2}</td>
             <tr><td>${n1} / ${n2}</td> <td> ${n1/n2}</td>   
             `)
-       
-    </script>
-
-</head>
-
-<body>
-    
-</body>
-
-</html>

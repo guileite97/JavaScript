@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de html com java script</title>
+</head>
+<body>
+    <!--Desenvolver o código Javascript para os seguintes enunciados: 
+3-) Crie um código em Javascript que receba os nomes de 5 pessoas através de campos de formulário. Ao clicar em um
+botão Inverter, armazene-os em um array e apresente os valores nos mesmos campos do formulário, porém na
+ordem inversa da que foram inicialmente digitados.
+4–) Calcule a média de diversas notas digitadas pelo usuário.
+5-)  Peça ao usuário para digitar várias idades, alturas e sexos.  Imprima na tela quantas pessoas são do sexo masculino e quantas pessoas são do sexo feminino. Mostre também qual é a maior altura e se essa altura é de um homem ou uma mulher. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.
+6-) Peça para o usuário digitar uma data. Exiba separadamente o dia, o mês e o ano. (Obs.: não necessita de laço de repetição). use o tipo date para fazer esse exercício.-->
+
+        <form>
+            Nome1: 
+            <input type="text" id="nome1">
+            Nome2: 
+            <input type="text" id="nome2">
+            Nome3: 
+            <input type="text" id="nome3">
+            Nome4: 
+            <input type="text" id="nome4">
+            Nome5: 
+            <input type="text" id="nome5">
+            <input type="button" value="Inverter" onclick="inverter()">
+        </form>
+
+
+<script>
+    function inverter(){
+        var inver = new Array()
+        inver.push(document.querySelector("#nome1").value)
+        inver.unshift(document.querySelector("#nome2").value)
+        inver.unshift(document.querySelector("#nome3").value)
+        inver.unshift(document.querySelector("#nome4").value)
+        inver.unshift(document.querySelector("#nome5").value)
+        for(var i = 0; i<5; i++ ){
+            document.querySelector(`#nome${i + 1}`).value = inver[i]
+        }
+
+        
+    }
+    
+    
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de html com java script</title>
+</head>
+<body>
+    <!--Desenvolver o código Javascript para os seguintes enunciados: 
+1-) Crie um formulário com os campos para cadastrar o usuário de um sistema (login, senha e confirmar senha).
+através de um script javascript Permita que a página seja submetida apenas se todos os campos estiverem preenchidos, se os campos senha e
+confirma senha forem iguais e a senha possuir entre 6 e 10 caracteres.-->
+<h1>Cadastro:</h1>
+<form>
+    Login:
+    <input type="text" id="nome" required><br>
+    Senha:
+    <input type="password" id="senha" required  minlength="6" maxlength="10"><br>
+    Confirmar:
+    <input type="password" id="confirmar" required  minlength="6" maxlength="10"><br>
+    <input type="submit" value="Confirmar" onclick="confirmarSenha()">
+</form>
+
+
+<script>
+    var senha = document.getElementById("senha")
+    var confirmar = document.getElementById("confirmar")
+
+    function confirmarSenha(){
+        if(senha.value ){
+
+        }
+        if(senha.value != confirmar.value) {
+            confirmar.setCustomValidity("Senhas diferentes!")
+        } else {
+            confirmar.setCustomValidity('')
+        }
+    }
+    
+
+    senha.onchange = validatePassword
+    confirmar.onkeyup = validatePassword
+</script>
+</body>
+</html>
